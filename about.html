@@ -1,0 +1,14 @@
+
+{% extends "base.html" %}
+{% block content %}
+<section class="page container">
+  <h2>About {{ SITE.name }}</h2>
+  <p>{{ SITE.name }} is an F1 in Schools team driven by engineering excellence, teamwork, and relentless iteration.</p>
+  <ul class="list">
+    <li><strong>Engineering:</strong> CAD-based aero optimization, CFD testing.</li>
+    <li><strong>Manufacturing:</strong> Precision milling, finish quality control.</li>
+    <li><strong>Brand & Marketing:</strong> Sponsorship outreach and event presence.</li>
+  </ul>
+  <img class="banner" src="{{ url_for('static', filename='images/team.png') }}" alt="Team Photo">
+</section>
+{% endblock %}

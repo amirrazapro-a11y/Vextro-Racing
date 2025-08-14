@@ -1,0 +1,16 @@
+
+{% extends "base.html" %}
+{% block content %}
+<section class="page container">
+  <h2>Our Car — Vextro V1</h2>
+  <p>Built with a focus on aerodynamics, weight distribution, and stability.</p>
+  <div class="specs">
+    <div><span>Chassis:</span> Carbon composite</div>
+    <div><span>Wheels:</span> Low-friction polymer</div>
+    <div><span>Coating:</span> Off-white matte</div>
+    <div><span>Primary Color:</span> Maroon (#800000)</div>
+    <div><span>Accent:</span> Red (#c8102e)</div>
+  </div>
+  <img class="banner" src="{{ url_for('static', filename='images/car2.png') }}" alt="Car render">
+</section>
+{% endblock %}
