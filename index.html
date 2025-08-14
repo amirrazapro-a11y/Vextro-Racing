@@ -3,27 +3,24 @@
 {% block content %}
 <section class="hero">
   <div class="container">
-    <h1>Speed. Precision. Glory.</h1>
-    <p>Welcome to {{ SITE.name }} — Where Velocity Meets Innovation.</p>
-    <a class="btn btn-accent" href="{{ url_for('about') }}">Meet the Team</a>
+    <h1>{{ SITE.tagline }}</h1>
+    <p>Welcome to {{ SITE.name }} — Where velocity meets innovation.</p>
+    <a class="btn btn-accent" href="{{ url_for('about') }}">Learn more</a>
   </div>
 </section>
 
 <section class="cards container">
   <div class="card">
-    <img src="{{ url_for('static', filename='images/car1.png') }}" alt="Vextro Car">
-    <h3>The V1 Car</h3>
-    <p>Designed for maximum downforce with minimal drag, featuring a lightweight chassis.</p>
+    <h3>Engineering</h3>
+    <p>Aero optimization, rapid prototyping, and relentless iteration.</p>
   </div>
   <div class="card">
-    <img src="{{ url_for('static', filename='images/team.png') }}" alt="Team">
-    <h3>Our Team</h3>
-    <p>A tight crew of engineers, designers, and strategists focused on winning.</p>
+    <h3>Teamwork</h3>
+    <p>Designers, engineers, and strategists moving as one.</p>
   </div>
   <div class="card">
-    <img src="{{ url_for('static', filename='images/track.png') }}" alt="Track">
     <h3>On Track</h3>
-    <p>From practice runs to race day—follow our progress and results.</p>
+    <p>Follow our development and race-day performance.</p>
   </div>
 </section>
 {% endblock %}

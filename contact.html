@@ -2,17 +2,17 @@
 {% extends "base.html" %}
 {% block content %}
 <section class="page container">
-  <h2>Contact Us</h2>
+  <h2>Contact</h2>
   {% with messages = get_flashed_messages() %}
     {% if messages %}
       <div class="flash">{{ messages[0] }}</div>
     {% endif %}
   {% endwith %}
   <form class="form" method="POST">
-    <input type="text" name="name" placeholder="Your Name" required>
-    <input type="email" name="email" placeholder="Your Email" required>
-    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-    <button type="submit" class="btn">Send</button>
+    <input type="text" name="name" placeholder="Your name" required>
+    <input type="email" name="email" placeholder="Your email" required>
+    <textarea name="message" placeholder="Message" rows="5" required></textarea>
+    <button class="btn" type="submit">Send</button>
   </form>
 </section>
 {% endblock %}
